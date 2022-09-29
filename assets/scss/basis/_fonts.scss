@@ -1,0 +1,26 @@
+/*
+    Пример подключения шрифта woff/woff2
+    https://css-tricks.com/snippets/css/using-font-face/
+*/
+
+/*Шрифт Montserrat*/
+@include fontFace('Montserrat-Thin', '../../fonts/Montserrat/Montserrat-Thin', 100);
+@include fontFace('Montserrat-ExtraLight', '../../fonts/Montserrat/Montserrat-ExtraLight', 200);
+@include fontFace('Montserrat-Light', '../../fonts/Montserrat/Montserrat-Light', 300);
+@include fontFace('Montserrat-Regular', '../../fonts/Montserrat/Montserrat-Regular', 400);
+@include fontFace('Montserrat-Medium', '../../fonts/Montserrat/Montserrat-Medium', 500);
+@include fontFace('Montserrat-SemiBold', '../../fonts/Montserrat/Montserrat-SemiBold', 600);
+@include fontFace('Montserrat-Bold', '../../fonts/Montserrat/Montserrat-Bold', 700);
+@include fontFace('Montserrat-ExtraBold', '../../fonts/Montserrat/Montserrat-ExtraBold', 800);
+@include fontFace('Montserrat-Black', '../../fonts/Montserrat/Montserrat-Black', 900);
+
+/*Шрифт Montserrat Italic*/
+@include fontFace('Montserrat-ThinItalic', '../../fonts/Montserrat/Montserrat-ThinItalic', 100, italic);
+@include fontFace('Montserrat-ExtraLightItalic', '../../fonts/Montserrat/Montserrat-ExtraLightItalic', 200, italic);
+@include fontFace('Montserrat-LightItalic', '../../fonts/Montserrat/Montserrat-LightItalic', 300, italic);
+@include fontFace('Montserrat-RegularItalic', '../../fonts/Montserrat/Montserrat-RegularItalic', 400, italic);
+@include fontFace('Montserrat-MediumItalic', '../../fonts/Montserrat/Montserrat-MediumItalic', 500, italic);
+@include fontFace('Montserrat-SemiBoldItalic', '../../fonts/Montserrat/Montserrat-SemiBoldItalic', 600, italic);
+@include fontFace('Montserrat-BoldItalic', '../../fonts/Montserrat/Montserrat-BoldItalic', 700, italic);
+@include fontFace('Montserrat-ExtraBoldItalic', '../../fonts/Montserrat/Montserrat-ExtraBoldItalic', 800, italic);
+@include fontFace('Montserrat-BlackItalic', '../../fonts/Montserrat/Montserrat-BlackItalic', 900, italic);

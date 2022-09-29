@@ -1,0 +1,18 @@
+.bubbles {
+    width: 100%;
+    height: inherit;
+    min-height: inherit;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &__object {
+        position: absolute;
+        z-index: -1;
+        border-radius: 50%;
+        animation: anim infinite;
+    }
+}
