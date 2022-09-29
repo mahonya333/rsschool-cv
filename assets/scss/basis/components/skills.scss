@@ -1,0 +1,95 @@
+.skills {
+    padding: 5rem 0 6.5rem;
+    overflow: hidden;
+
+    @include breakpoint($notebook-width) {
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+        font-family: $Montserrat-SemiBold;
+        font-size: 3.5rem;
+
+        @include breakpoint($notebook-width) {
+            font-size: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        padding-bottom: 6rem;
+
+        @include breakpoint($notebook-width) {
+            padding-bottom: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 3rem;
+        }
+    }
+
+    &__list {
+        list-style: circle;
+    }
+
+    &__list-item {
+        margin-left: 4rem;
+        font-family: $Montserrat-Medium;
+        font-size: 2.2rem;
+
+        @include breakpoint($notebook-width) {
+            font-size: 1.8rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            font-size: 1.6rem;
+            margin-left: 2rem;
+        }
+
+        & + &  {
+            margin-top: 2rem;
+        }
+    }
+
+    &__icons-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 7rem);
+        grid-gap: 5rem;
+
+        @include breakpoint($notebook-width) {
+            grid-template-columns: repeat(auto-fill, 5rem);
+            grid-gap: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            grid-template-columns: repeat(auto-fill, 3.6rem);
+            grid-gap: 2rem;
+        }
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+
+        @include breakpoint($mobile-width) {
+            width: 3.6rem;
+            height: 3.6rem;
+        }
+    }
+
+}

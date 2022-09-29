@@ -1,0 +1,18 @@
+.school-logotype {
+    display: flex;
+
+    @include breakpoint($tablet-width) {
+        width: 10rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        width: 6rem;
+    }
+
+    &__link {
+        transition: all .1s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

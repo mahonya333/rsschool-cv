@@ -1,0 +1,62 @@
+.contact {
+    padding: 5rem 0 6.5rem;
+
+    @include breakpoint($notebook-width) {
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    &__title {
+        margin-bottom: 3rem;
+        font-family: $Montserrat-SemiBold;
+        font-size: 3.5rem;
+
+        @include breakpoint($notebook-width) {
+            font-size: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+
+    &__list-link {
+        display: flex;
+        align-items: center;
+        font-family: $Montserrat-Medium;
+        font-size: 2.1rem;
+        color: $color-black;
+        transition: all .3s ease-in-out;
+
+        @include breakpoint($mobile-width) {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            color: $color-celadon-blue;
+        }
+    }
+
+    &__list-icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.5rem;
+
+        @include breakpoint($mobile-width) {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}
