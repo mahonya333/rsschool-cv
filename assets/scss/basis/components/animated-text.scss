@@ -1,0 +1,15 @@
+.animated-text {
+    display: block;
+    
+    &__symbol {
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+
+        &._animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: jumpingToScreen;
+        }
+    }
+}
