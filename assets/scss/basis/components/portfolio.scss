@@ -1,0 +1,73 @@
+.portfolio {
+    padding: 5rem 0 6.5rem;
+    background-color: #12374a;
+
+    @include breakpoint($notebook-width) {
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+        font-family: $Montserrat-SemiBold;
+        font-size: 3.5rem;
+        color: $color-white;
+
+        @include breakpoint($notebook-width) {
+            font-size: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+
+        @include breakpoint($mobile-width) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($mobile-width-small) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__item-link {
+        display: flex;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            &::before {
+                background-color: transparent;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &__item-img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
